@@ -1,0 +1,287 @@
+/* Main CSS file for the index page of my personal website */
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+::placeholder {
+  color: #c9c9c9;
+  font-family: 'Nunito Sans';
+}
+
+::selection {
+  background-color: #262626;
+  color: #fff;
+}
+
+p {
+  font-family: 'Scope One';
+  font-size: 16pt;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Nunito Sans';
+}
+
+/* Misc styling  */
+
+#name {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: lighter;
+  position: fixed;
+  width: 100%;
+  font-size: 24pt;
+  top: 0px;
+  right: 0px;
+  border-top: 2px solid #262626;
+  z-index: 1;
+  text-align: right;
+}
+
+/* Navigation styling */
+
+.navi {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+
+  width: 250px;
+  height: 350px;
+  background: #262626;
+
+  z-index: 2;
+}
+
+.navi ul {
+  height: 70%;
+  width: 100%;
+  padding-top: 10%;
+}
+
+#socialList {
+  height: 30%;
+}
+
+#socialList li {
+  display: inline;
+}
+
+.icon-links {
+  color: #fff;
+  font-size: 14pt;
+  transition: 0.4s;
+}
+
+.icon-links:hover {
+  color: #c9c9c9;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+li {
+  padding: 5px;
+}
+
+.navi-link {
+  font-family: 'Nunito Sans';
+  font-weight: bold;
+  letter-spacing: 1px;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navi-link:hover {
+  color: #c9c9c9;
+  text-decoration: none;
+}
+
+.navi-link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navi-link:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* Welcome Section */
+
+.header-content {
+  height: 100%;
+  width: 100%;
+  background-image: url(mojave_dynamic_8.jpeg);
+  background-size: cover;
+}
+
+.arrow-box {
+  bottom: 0;
+  left: 45%;
+  background-color: #262626;
+  color: #fff;
+  width: 20px;
+  height: 15px;
+}
+
+#welcome {
+  position: relative;
+  top: 50px;
+}
+
+#welcomeText {
+  position: relative;
+  top: 75px;
+  width: 50%;
+  left: 25%;
+  vertical-align: middle;
+}
+
+.carousel {
+  height: 10px;
+  width: 75%;
+}
+
+/* About Section */
+
+.about {
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  background-image: url(mojave_dynamic_11.jpeg);
+  background-size: cover;
+}
+
+#aboutHeader {
+  position: relative;
+  top: 50px;
+}
+
+#aboutText {
+  width: 50%;
+  position: relative;
+  top: 75px;
+  left: 25%;
+}
+
+/* Projects Section */
+
+.projects {
+  height: 500px;
+  width: 100%;
+}
+
+/* Contact Section */
+
+.contact {
+  height: 500px;
+  width: 100%;
+  display: flex;
+}
+
+.contact-text {
+  height: 150px;
+  width: 100%;
+
+}
+
+.contact-left {
+  height: 100%;
+  width: 50%;
+}
+
+.contact-right {
+  height: 100%;
+  width: 50%;
+}
+
+/* Contact Form Styling */
+
+.contact-form {
+  width: 100%;
+  height: 100%;
+}
+
+#contactText {
+  position: relative;
+  left: 25%;
+  width: 500px;
+}
+
+.contact-form input {
+  font-family: 'Nunito Sans';
+  display: block;
+  margin-bottom: 10px;
+  width: 50%;
+  padding: 10px;
+  border-bottom: 2px solid #262626;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  outline: none;
+}
+
+.contact-form input:focus {
+  
+}
+
+.submit-btn {
+  width: 50%;
+  height: 50px;
+  font-family: 'Quicksand';
+  background-color: #262626;
+  color: #fff;
+  border: 2px solid #262626;
+  border-radius: 5px;
+}
+
+/* Footer Styling */
+
+.foot {
+  background-color: #262626;
+  position: relative;
+  bottom: 0px;
+  height: 100px;
+  width: 100%;
+  padding: 25px 25px 25px 25px;
+  color: #fff;
+}
+
+.foot-list {
+  position: relative;
+  left: 25%;
+  list-style-type: none;
+}
+
+.foot-list li {
+  display: inline;
+}
+
+.foot-link {
+  color: #fff;
+  font-family: 'Quicksand';
+  transition: 0.4s;
+}
+
+.foot-link:hover {
+  color: #c9c9c9;
+  text-decoration: none;
+}
